@@ -1,0 +1,170 @@
+{
+	"id": "5d256621-1d16-44d8-ae71-ffc9613ded3d",
+	"name": "​​Lesson 17. API",
+	"timestamp": "2023-02-28T17:59:01.022Z",
+	"collection_id": "26044090-92dc2e00-a4c4-46c0-a004-58c25e893768",
+	"folder_id": 0,
+	"environment_id": "26044090-54726619-3d17-4ed4-9982-05ff57c23e0d",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-02-28T17:58:57.402Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6cd9e29d-906c-4f6c-9ae8-a10c88f339f5",
+			"name": "POST create user",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 1455,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1455
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "c78aaea1-2b7a-4797-b743-e804201befd0",
+			"name": "GET user",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=32faae5b-2bb6-4fe8-8fd8-a04bc2416553",
+			"time": 547,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				547
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "69bccd7c-b716-4922-8f48-49df653eed91",
+			"name": "Edit user",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 822,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				822
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "474029dd-d35d-4c32-a66e-6e8952011297",
+			"name": "New Request",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=32faae5b-2bb6-4fe8-8fd8-a04bc2416553",
+			"time": 512,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				512
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1000ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3336,
+	"collection": {
+		"requests": [
+			{
+				"id": "6cd9e29d-906c-4f6c-9ae8-a10c88f339f5",
+				"method": "POST"
+			},
+			{
+				"id": "c78aaea1-2b7a-4797-b743-e804201befd0",
+				"method": "GET"
+			},
+			{
+				"id": "69bccd7c-b716-4922-8f48-49df653eed91",
+				"method": "PUT"
+			},
+			{
+				"id": "474029dd-d35d-4c32-a66e-6e8952011297",
+				"method": "DELETE"
+			}
+		]
+	}
+}
